@@ -1,6 +1,13 @@
-@Pirooz.Host_HostAddress = http://localhost:5138
+@Pirooz.Host_HostAddress = https://localhost:7099/
 
-GET {{Pirooz.Host_HostAddress}}/weatherforecast/
+GET {{Pirooz.Host_HostAddress}}hr/employees
 Accept: application/json
+###
 
+GET {{Pirooz.Host_HostAddress}}payroll/invoices
+Accept: application/json
+###
+
+GET {{Pirooz.Host_HostAddress}}marketing/campaigns
+Accept: application/json
 ###

@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Pirooz.Payroll;
 
-internal static class PayrollEndpoints
+public static class PayrollEndpoints
 {
     public static void MapPayrollEndpoints(this WebApplication app)
     {
-        app.MapGet("/payroll/invoices", (InvoiceService invoiceService) =>
+        app.MapGet("/payroll/invoices", ([FromServices] IInvoiceService invoiceService) =>
         {
             return invoiceService.ListInvoices();
         });

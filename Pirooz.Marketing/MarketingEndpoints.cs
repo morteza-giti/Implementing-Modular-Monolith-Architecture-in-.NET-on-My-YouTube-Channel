@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Pirooz.Marketing;
 
-internal static class MarketingEndpoints
+public static class MarketingEndpoints
 {
     public static void MapMarketingEndpoints(this WebApplication app)
     {
-        app.MapGet("/marketing/campaigns", (CampaignService campaignService) =>
+        app.MapGet("/marketing/campaigns", ([FromServices] ICampaignService campaignService) =>
         {
             return campaignService.ListCampaigns();
         });

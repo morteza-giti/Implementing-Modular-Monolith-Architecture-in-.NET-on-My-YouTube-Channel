@@ -1,6 +1,6 @@
 ﻿namespace Pirooz.Marketing;
 
-internal class CampaignService
+internal class CampaignService : ICampaignService
 {
     public List<CampaignDto> ListCampaigns()
     {
