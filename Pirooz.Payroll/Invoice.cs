@@ -1,4 +1,4 @@
-﻿namespace Pirooz.Marketing;
+﻿namespace Pirooz.Payroll;
 
 public class Invoice
 {

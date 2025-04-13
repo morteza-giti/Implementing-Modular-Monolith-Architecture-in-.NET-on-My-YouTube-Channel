@@ -1,4 +1,4 @@
-﻿namespace Pirooz.Payroll;
+﻿namespace Pirooz.Marketing;
 
 public class Campaign
 {
@@ -8,3 +8,6 @@ public class Campaign
     public decimal Budget { get; set; }
     public string TargetAudience { get; set; }
 }
+
+
+
