@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FastEndpoints" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Pirooz.HR\Pirooz.HR.csproj" />
     <ProjectReference Include="..\Pirooz.Marketing\Pirooz.Marketing.csproj" />
     <ProjectReference Include="..\Pirooz.Payroll\Pirooz.Payroll.csproj" />

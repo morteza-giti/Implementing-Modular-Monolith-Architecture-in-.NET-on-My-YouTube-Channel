@@ -1,7 +1,7 @@
 ﻿
 namespace Pirooz.HR
 {
-    internal interface IEmployeeService
+    public interface IEmployeeService
     {
         List<EmployeeDto> ListEmployees();
     }

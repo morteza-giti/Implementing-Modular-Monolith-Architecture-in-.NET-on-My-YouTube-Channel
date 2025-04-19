@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using FastEndpoints;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Pirooz.Payroll;
@@ -13,3 +14,4 @@ public static class PayrollEndpoints
         });
     }
 }
+

@@ -1,7 +1,7 @@
 ﻿
 namespace Pirooz.Payroll
 {
-    internal interface IInvoiceService
+    public interface IInvoiceService
     {
         List<InvoiceDto> ListInvoices();
     }

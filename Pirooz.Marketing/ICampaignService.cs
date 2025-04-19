@@ -1,7 +1,7 @@
 ﻿
 namespace Pirooz.Marketing
 {
-    internal interface ICampaignService
+    public interface ICampaignService
     {
         List<CampaignDto> ListCampaigns();
     }

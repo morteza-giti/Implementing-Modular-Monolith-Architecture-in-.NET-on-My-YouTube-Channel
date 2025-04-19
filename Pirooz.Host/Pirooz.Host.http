@@ -11,3 +11,13 @@ Accept: application/json
 GET {{Pirooz.Host_HostAddress}}marketing/campaigns
 Accept: application/json
 ###
+
+### Endpoints implemented using FastEndpoints
+GET {{Pirooz.Host_HostAddress}}api/hr/employees
+Accept: application/json
+###
+GET {{Pirooz.Host_HostAddress}}api/marketing/campaigns
+Accept: application/json
+###
+GET {{Pirooz.Host_HostAddress}}api/payroll/invoices
+Accept: application/json
