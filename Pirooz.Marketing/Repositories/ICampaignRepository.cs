@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pirooz.Marketing.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Pirooz.Marketing.Repositories
     public interface ICampaignRepository
     {
         Task<Campaign> GetByIdAsync(int id);
-        Task<Campaign> ListAllAsync();
+        Task<List<Campaign>> ListAllAsync();
         Task AddAsync(Campaign campaign);
         Task UpdateAsync(Campaign campaign);
         Task DeleteAsync(Campaign campaign);

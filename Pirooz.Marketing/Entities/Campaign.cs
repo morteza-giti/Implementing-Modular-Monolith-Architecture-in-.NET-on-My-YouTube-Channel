@@ -1,7 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using System;
 
-namespace Pirooz.Marketing;
+namespace Pirooz.Marketing.Entities;
 
 public class Campaign
 {

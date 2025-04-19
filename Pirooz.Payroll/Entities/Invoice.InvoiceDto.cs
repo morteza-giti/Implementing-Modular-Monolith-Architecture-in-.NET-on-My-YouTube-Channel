@@ -1,3 +1,3 @@
-﻿namespace Pirooz.Payroll;
+﻿namespace Pirooz.Payroll.Entities;
 
 public record InvoiceDto(int InvoiceId, decimal Amount, DateTime DateIssued, string Status);

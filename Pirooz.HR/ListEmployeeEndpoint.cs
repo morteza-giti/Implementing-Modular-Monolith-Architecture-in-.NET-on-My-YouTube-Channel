@@ -1,4 +1,6 @@
 ﻿using FastEndpoints;
+using Pirooz.HR.Entities;
+using Pirooz.HR.Services;
 namespace Pirooz.HR;
 
 public class ListEmployeeEndpoint : EndpointWithoutRequest<List<EmployeeDto>>
@@ -16,8 +18,8 @@ public class ListEmployeeEndpoint : EndpointWithoutRequest<List<EmployeeDto>>
     }
     public override async Task HandleAsync(CancellationToken ct)
     {
-        var employees = employeeService.ListEmployees();
-        await SendAsync(employees.ToList());
+        var employees = await employeeService.ListEmployeesAsync();
+        await SendAsync(employees);
     }
 }
 

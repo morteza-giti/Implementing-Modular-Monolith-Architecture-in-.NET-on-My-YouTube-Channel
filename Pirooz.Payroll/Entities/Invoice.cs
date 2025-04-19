@@ -1,7 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using System;
 
-namespace Pirooz.Payroll;
+namespace Pirooz.Payroll.Entities;
 
 public class Invoice
 {

@@ -2,7 +2,7 @@
 using System.Reflection.Metadata;
 using System.Xml.Linq;
 
-namespace Pirooz.HR;
+namespace Pirooz.HR.Entities;
 
 public class Employee
 {
@@ -26,6 +26,6 @@ public class Employee
     }
     public void UpdateHourlyWage(decimal newHourlyWage)
     {
-        HourlyWage = Guard.Against.OutOfRange<decimal>(newHourlyWage, nameof(newHourlyWage), 10, 100);
+        HourlyWage = Guard.Against.OutOfRange(newHourlyWage, nameof(newHourlyWage), 10, 100);
     }
 }

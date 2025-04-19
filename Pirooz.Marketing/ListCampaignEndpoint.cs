@@ -1,4 +1,6 @@
 ﻿using FastEndpoints;
+using Pirooz.Marketing.Entities;
+using Pirooz.Marketing.Services;
 
 namespace Pirooz.Marketing;
 
@@ -17,7 +19,7 @@ public class ListCampaignEndpoint : EndpointWithoutRequest<List<CampaignDto>>
     }
     public override async Task HandleAsync(CancellationToken ct)
     {
-        var campaignList = campaignService.ListCampaigns();
-        await SendAsync(campaignList.ToList());
+        var campaigns = await campaignService.ListCampaignsAsync();
+        await SendAsync(campaigns);
     }
 }

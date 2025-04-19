@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pirooz.Payroll.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Pirooz.Payroll.Repositories
     public interface IInvoiceRepository
     {
         Task<Invoice> GetByIdAsync(int id);
-        Task<Invoice> ListAllAsync();
+        Task<List<Invoice>> ListAllAsync();
         Task AddAsync(Invoice invoice);
         Task UpdateAsync(Invoice invoice);
         Task DeleteAsync(Invoice invoice);
